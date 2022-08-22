@@ -1,0 +1,3 @@
+Yello --> #F9B301
+Back --> #1A1A1A
+White --> #FFFFFF
