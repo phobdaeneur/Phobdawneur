@@ -1,9 +1,9 @@
 import React from "react";
 import daisy from "../images/daisy.jpg";
-import dawneur from "../images/dawneur.jpg";
-import dawneur2 from "../images/dawneur2.jpg";
-import dawneur3 from "../images/dawneur3.jpg";
-import dawneur4 from "../images/dawneur4.jpg";
+import dawneur from "../images/homeIma/dawneur.jpg";
+import dawneur2 from "../images/homeIma/dawneur2.jpg";
+import dawneur3 from "../images/homeIma/dawneur3.jpg";
+import dawneur4 from "../images/homeIma/dawneur4.jpg";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 
@@ -12,7 +12,7 @@ function HomePage() {
     <div className="flex flex-col items-center justify-center h-screen">
       {/* Image */}
 
-      <div className=" absolute top-16 left-0 w-96 h-full bg-[#F9B301]"></div>
+      <div className=" absolute left-0 w-1/4 h-screen bg-[#FFA446]"></div>
       <div className="flex flex-row items-center justify-between">
         <div className=" absolute left-20 w-2/5 z-20 rounded-xl">
           <AliceCarousel
@@ -20,10 +20,10 @@ function HomePage() {
             autoPlayInterval={3000}
             infinite={true}
             renderPrevButton={() => {
-              return <button className="p-4">Previous</button>;
+              return <button className="px-4">Previous</button>;
             }}
             renderNextButton={() => {
-              return <button className="p-4">Next</button>;
+              return <button className="px-4">Next</button>;
             }}
           >
             <img src={dawneur} className="sliderimg " />
@@ -34,7 +34,7 @@ function HomePage() {
         </div>
 
         {/* Data */}
-        <div className=" absolute right-10 flex flex-col items-start gap-8 px-10 z-20 w-1/2">
+        <div className=" absolute right-10 flex flex-col items-start gap-8 px-10 w-1/2">
           <label className=" text-[#1A1A1A] text-4xl font-serif">
             Welcome to my universe
           </label>

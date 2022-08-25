@@ -10,7 +10,6 @@ import event from "../component/event";
 import "moment-timezone";
 import logo from "../images/PHOBDAWNEUR.png";
 
-// moment.tz("Asia/Bangkok");
 const localizer = momentLocalizer(moment);
 
 function WorkCalendar() {
@@ -29,19 +28,26 @@ function WorkCalendar() {
   };
 
   // Convert date start
-  const dateStartChange = moment(dateStart).format("YYYY-MM-DD HH:mm:ss");
+  const dateStartChange = moment(dateStart).format("YYYY-MM-DD HH:mm");
   // console.log(dateStartChange);
 
   // Convert date end
-  const dateEndChange = moment(dateEnd).format("YYYY-MM-DD HH:mm:ss");
+  const dateEndChange = moment(dateEnd).format("YYYY-MM-DD HH:mm");
   // console.log(dateEndChange);
 
+  const [selected, setSelected] = useState("yes");
+
+  const handleChange = (e: any) => {
+    console.log(e.target.value);
+    setSelected(e.target.value);
+  };
+
   return (
-    <div className=" flex flex-col w-screen gap-4 px-5">
+    <div className=" flex flex-col w-screen gap-4 px-5 pt-16">
       <div className=" flex justify-end items-end pt-10">
         <button
           onClick={() => setShow(true)}
-          className=" w-24 h-10 rounded-xl bg-[#F9B301] text-sm font-medium text-black hover:text-white select-none hover:bg-[#feb600]"
+          className=" w-24 h-10 rounded-xl bg-[#FFA446] text-sm font-medium text-white hover:text-white select-none hover:bg-[#feb600]"
         >
           Create
         </button>
@@ -67,39 +73,66 @@ function WorkCalendar() {
                       className="bg-indigo-50 px-4 py-2 outline-none rounded-md w-64"
                     />
                   </div>
-                  <div className="dark:bg-white dark:rounded-xl">
-                    {/* Date start */}
-                    <label className="block mb-1 text-gray-600 font-semibold">
-                      Date start
-                    </label>
-                    <LocalizationProvider dateAdapter={AdapterDateFns}>
-                      <DateTimePicker
-                        label="Start"
-                        ampm={false}
-                        value={dateStart}
-                        onChange={handleDateStartChange}
-                        renderInput={(params) => <TextField {...params} />}
-                      />
-                    </LocalizationProvider>
-                    {/* Date start */}
+                  <div className="flex flex-row gap-7 items-center justify-between">
+                    <label className=" text-lg font-mono">All day</label>
+                    <input
+                      type="radio"
+                      id="yes"
+                      name="choose"
+                      value="yes"
+                      checked={selected === "yes"}
+                      onChange={handleChange}
+                    />
+                    <label htmlFor="yes">Yes</label>
+
+                    <input
+                      type="radio"
+                      id="no"
+                      name="choose"
+                      value="no"
+                      onChange={handleChange}
+                      checked={selected === "no"}
+                    />
+                    <label htmlFor="no">No</label>
                   </div>
 
-                  <div className="dark:bg-white dark:rounded-xl">
-                    {/* Date end */}
-                    <label className="block mb-1 text-gray-600 font-semibold">
-                      Date end
-                    </label>
-                    <LocalizationProvider dateAdapter={AdapterDateFns}>
-                      <DateTimePicker
-                        label="End"
-                        ampm={false}
-                        value={dateEnd}
-                        onChange={handleDateEndChange}
-                        renderInput={(params) => <TextField {...params} />}
-                      />
-                    </LocalizationProvider>
-                    {/* Date end */}
-                  </div>
+                  {selected == "no" ? (
+                    <>
+                      <div className="dark:bg-white dark:rounded-xl">
+                        {/* Date start */}
+                        <label className="block mb-1 text-gray-600 font-semibold">
+                          Date start
+                        </label>
+                        <LocalizationProvider dateAdapter={AdapterDateFns}>
+                          <DateTimePicker
+                            label="Start"
+                            ampm={false}
+                            value={dateStart}
+                            onChange={handleDateStartChange}
+                            renderInput={(params) => <TextField {...params} />}
+                          />
+                        </LocalizationProvider>
+                        {/* Date start */}
+                      </div>
+
+                      <div className="dark:bg-white dark:rounded-xl">
+                        {/* Date end */}
+                        <label className="block mb-1 text-gray-600 font-semibold">
+                          Date end
+                        </label>
+                        <LocalizationProvider dateAdapter={AdapterDateFns}>
+                          <DateTimePicker
+                            label="End"
+                            ampm={false}
+                            value={dateEnd}
+                            onChange={handleDateEndChange}
+                            renderInput={(params) => <TextField {...params} />}
+                          />
+                        </LocalizationProvider>
+                        {/* Date end */}
+                      </div>
+                    </>
+                  ) : null}
                 </div>
                 <div className="flex justify-end pt-5">
                   <button
@@ -110,7 +143,7 @@ function WorkCalendar() {
                   </button>
                   <button
                     onClick={() => setShow(false)}
-                    className="focus:outline-none px-4 bg-yellow-500 p-3 ml-3 rounded-lg text-white hover:bg-yellow-400"
+                    className="focus:outline-none px-4 bg-[#FFA446] p-3 ml-3 rounded-lg text-white hover:bg-[#feb600]"
                   >
                     Confirm
                   </button>
