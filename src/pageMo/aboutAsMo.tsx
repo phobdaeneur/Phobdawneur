@@ -13,7 +13,7 @@ function AboutAsMo() {
       </div>
 
       <div className=" flex flex-col gap-2">
-        <p className=" text-xl font-mono">CONTACT</p>
+        <p className=" text-xl font-mono">Contact</p>
         <div className=" flex flex-col">
           <p className=" text-sm font-mono">Email : phobdawneur@gmail.com</p>
           <a
