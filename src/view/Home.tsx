@@ -5,6 +5,7 @@ import HomePage from "../pageWin/home";
 import AboutUs from "../pageWin/aboutUs";
 import WorkCalendar from "../pageWin/workCalendar";
 import Document from "../pageWin/document";
+import Cooking from "../pageWin/cooking";
 import logo from "../images/logo/PHOBDAWNEUR.png";
 import logoWhite from "../images/logo/PHOBDAWNEUR2.png";
 import iconhome from "../images/iconMenu/home.svg";
@@ -39,7 +40,7 @@ function Home() {
                   Document
                 </Tab>
                 <Tab value="document" onClick={() => setSelected("document")}>
-                  Chat with me
+                  Cook with me
                 </Tab>
                 <Tab value="document" onClick={() => setSelected("document")}>
                   Calendar for my work
@@ -105,7 +106,9 @@ function Home() {
                 <Document />
               </Tab.Panel>
 
-              <Tab.Panel>My work</Tab.Panel>
+              <Tab.Panel>
+                <Cooking />
+              </Tab.Panel>
 
               <Tab.Panel>
                 <WorkCalendar />
@@ -116,7 +119,6 @@ function Home() {
       </div>
 
       {/* Mobile app */}
-
       <div className=" bg-[#FFFFFF] h-screen w-screen lg:hidden">
         <div className=" w-screen">
           <Tab.Group>

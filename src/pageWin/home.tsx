@@ -12,24 +12,32 @@ function HomePage() {
     <div className="flex flex-col items-center justify-center h-screen">
       {/* Image */}
 
-      <div className=" absolute left-0 w-1/4 h-screen bg-[#FFA446]"></div>
+      <div className=" absolute left-0 w-1/4 h-screen bg-gradient-to-b from-[#ffaa55] to-[#f76300]"></div>
       <div className="flex flex-row items-center justify-between">
         <div className=" absolute left-20 w-2/5 z-20 rounded-xl">
           <AliceCarousel
             autoPlay
-            autoPlayInterval={3000}
+            autoPlayInterval={5000}
             infinite={true}
             renderPrevButton={() => {
-              return <button className="px-4">Previous</button>;
+              return (
+                <button className="px-4 absolute left-3 top-3/4 text-white">
+                  Previous
+                </button>
+              );
             }}
             renderNextButton={() => {
-              return <button className="px-4">Next</button>;
+              return (
+                <button className="px-4 absolute right-3 top-3/4 text-white">
+                  Next
+                </button>
+              );
             }}
           >
-            <img src={dawneur} className="sliderimg " />
-            <img src={dawneur2} className="sliderimg " />
-            <img src={dawneur3} className="sliderimg " />
-            <img src={dawneur4} className="sliderimg " />
+            <img src={dawneur} className="sliderimg rounded-2xl" />
+            <img src={dawneur2} className="sliderimg rounded-2xl" />
+            <img src={dawneur3} className="sliderimg rounded-2xl" />
+            <img src={dawneur4} className="sliderimg rounded-2xl" />
           </AliceCarousel>
         </div>
 
@@ -47,7 +55,7 @@ function HomePage() {
             และปรากฏอยู่นิ่ง ๆ เหนือขอบฟ้าทางทิศเหนือตลอดทั้งคืน
             เเล้วคุณเคยได้ยินประโยคที่บอกว่า
             เมื่อคุณเดินหลงทางให้มองหาดาวเหนือไหม? ดังนั้นเราจึงหวังว่าคุณจะ{" "}
-            <a className="underline decoration-[#F9B301] decoration-wavy">
+            <a className="bg-clip-text text-transparent bg-gradient-to-r from-[#B44242] to-[#FF9339] underline decoration-[#f76300] decoration-wavy">
               พบดาวเหนือ(Phobdawneur)
             </a>{" "}
             ของคุณเองในสักวัน...

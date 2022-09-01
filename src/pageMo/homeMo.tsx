@@ -42,7 +42,7 @@ function HomeMo() {
           และปรากฏอยู่นิ่ง ๆ เหนือขอบฟ้าทางทิศเหนือตลอดทั้งคืน
           เเล้วคุณเคยได้ยินประโยคที่บอกว่า
           เมื่อคุณเดินหลงทางให้มองหาดาวเหนือไหม? ดังนั้นเราจึงหวังว่าคุณจะ{" "}
-          <a className="underline decoration-[#F9B301] decoration-wavy">
+          <a className="bg-clip-text text-transparent bg-gradient-to-r from-[#B44242] to-[#FF9339] underline decoration-[#F9B301] decoration-wavy">
             พบดาวเหนือ(Phobdawneur)
           </a>{" "}
           ของคุณเองในสักวัน...

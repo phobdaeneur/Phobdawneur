@@ -49,4 +49,9 @@ export default [
     start: new Date("2022-08-19 13:00"),
     end: new Date("2022-08-19 15:00"),
   },
+  {
+    title: "One piece film red",
+    start: new Date("2022-08-31 18:00"),
+    end: new Date("2022-08-31"),
+  },
 ];
