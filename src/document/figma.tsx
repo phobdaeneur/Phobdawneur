@@ -30,7 +30,7 @@ function Figma() {
       <div className="w-screen min-h-full flex flex-wrap justify-center items-center gap-3">
         <div className="backdrop w-10/12 md:w-1/4 bg-white hover:bg-black hover:bg-opacity-20 bg-opacity-20 rounded p-3 text-white border border-gray-300 shadow-lg">
           <div className="w-full mb-3 pb-3 border-b border-1 border-white">
-            <h3 className="text-xl font-semibold text-shadow">
+            <h3 className="text-xl font-semibold text-shadow font-mono">
               Kratos tracking new web
             </h3>
           </div>
@@ -41,14 +41,15 @@ function Figma() {
               alt="image1"
               className="w-full h-28 object-cover mb-2"
             />
-            <p className="mb-3 tracking-wide text-base text-shadow indent-8">
-              The new web mocup design for Kratos customer [Install GPS tracker]
+            <p className="mb-3 tracking-wide text-sm px-2 text-shadow indent-8 font-mono">
+              The new web mocup design for Kratos's customer [Install GPS
+              tracker]
             </p>
             <div className="flex flex-row justify-start gap-x-4">
               <a
                 target="_blank"
                 href="https://www.figma.com/file/WDn1Q7JXQTpkuCrGOXSklz/Design?node-id=337%3A66274"
-                className="backdrop bg-white bg-opacity-0 border border-white px-3 py-1.5 rounded focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-40 hover:bg-opacity-20 text-lg"
+                className="backdrop bg-white bg-opacity-0 border border-white px-3 py-1.5 rounded focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-40 hover:bg-opacity-20 text-lg font-mono"
               >
                 Detail
               </a>
@@ -58,7 +59,9 @@ function Figma() {
 
         <div className="backdrop w-10/12 md:w-1/4 bg-white hover:bg-black hover:bg-opacity-20 bg-opacity-20 rounded p-3 text-white border border-white shadow-lg">
           <div className="w-full mb-3 pb-3 border-b border-1 border-white">
-            <h3 className="text-xl font-semibold text-shadow">ERP [Kratos]</h3>
+            <h3 className="text-xl font-semibold text-shadow font-mono">
+              ERP [Kratos]
+            </h3>
           </div>
 
           <div>
@@ -67,35 +70,35 @@ function Figma() {
               alt="image2"
               className="w-full h-28 object-cover mb-2"
             />
-            <p className="mb-3 tracking-wide text-base text-shadow indent-8">
+            <p className="mb-3 tracking-wide text-sm px-2 text-shadow indent-8 font-mono">
               Enterprise resource planning for Kratos tracking company
             </p>
             <div className="flex flex-row justify-center gap-x-4">
               <a
                 target="_blank"
                 href="https://www.figma.com/file/fCFgQWMGR17MwvZf2jJcLn/Inventory?node-id=0%3A1"
-                className="backdrop bg-white bg-opacity-0 border border-white px-3 py-1.5 rounded focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-40 hover:bg-opacity-20 text-lg"
+                className="backdrop bg-white bg-opacity-0 border border-white px-3 py-1.5 rounded focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-40 hover:bg-opacity-20 text-lg font-mono"
               >
                 Inventory
               </a>
               <a
                 target="_blank"
                 href="https://www.figma.com/file/Iawz9DiNdeaJrBTDHxBpw1/JMS-Module?node-id=0%3A1"
-                className="backdrop bg-white bg-opacity-0 border border-white px-3 py-1.5 rounded focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-40 hover:bg-opacity-20 text-lg"
+                className="backdrop bg-white bg-opacity-0 border border-white px-3 py-1.5 rounded focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-40 hover:bg-opacity-20 text-lg font-mono"
               >
                 JMS
               </a>
               <a
                 target="_blank"
                 href="https://www.figma.com/file/fCFgQWMGR17MwvZf2jJcLn/EMS--Module?node-id=0%3A1"
-                className="backdrop bg-white bg-opacity-0 border border-white px-3 py-1.5 rounded focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-40 hover:bg-opacity-20 text-lg"
+                className="backdrop bg-white bg-opacity-0 border border-white px-3 py-1.5 rounded focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-40 hover:bg-opacity-20 text-lg font-mono"
               >
                 EMS
               </a>
               <a
                 target="_blank"
                 href="https://www.figma.com/file/4piZH5dYT5Fp7S9syWiGQu/CRM-Module?node-id=0%3A1"
-                className="backdrop bg-white bg-opacity-0 border border-white px-3 py-1.5 rounded focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-40 hover:bg-opacity-20 text-lg"
+                className="backdrop bg-white bg-opacity-0 border border-white px-3 py-1.5 rounded focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-40 hover:bg-opacity-20 text-lg font-mono"
               >
                 CRM
               </a>
@@ -105,7 +108,7 @@ function Figma() {
 
         <div className="backdrop w-10/12 md:w-1/4 bg-white hover:bg-black hover:bg-opacity-20 bg-opacity-20 rounded p-3 text-white border border-white shadow-lg">
           <div className="w-full mb-3 pb-3 border-b border-1 border-white">
-            <h3 className="text-xl font-semibold text-shadow">
+            <h3 className="text-xl font-semibold text-shadow font-mono">
               Something Good
             </h3>
           </div>
@@ -116,14 +119,13 @@ function Figma() {
               alt="image3"
               className="w-full h-28 object-cover mb-2"
             />
-            <p className="mb-3 tracking-wide text-base text-shadow indent-8">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa,
-              omnis.
+            <p className="mb-3 tracking-wide text-sm px-2 text-shadow indent-8 font-mono">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
             </p>
             <div className="flex flex-row justify-start gap-x-4">
               <a
                 target="_blank"
-                className="backdrop bg-white bg-opacity-0 border border-white px-3 py-1.5 rounded focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-40 hover:bg-opacity-20 text-lg"
+                className="backdrop bg-white bg-opacity-0 border border-white px-3 py-1.5 rounded focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-40 hover:bg-opacity-20 text-lg font-mono"
               >
                 Detail
               </a>
@@ -133,7 +135,7 @@ function Figma() {
 
         <div className="backdrop w-10/12 md:w-1/4 bg-white hover:bg-black hover:bg-opacity-20 bg-opacity-20 rounded p-3 text-white border border-gray-300 shadow-lg">
           <div className="w-full mb-3 pb-3 border-b border-1 border-white">
-            <h3 className="text-xl font-semibold text-shadow">
+            <h3 className="text-xl font-semibold text-shadow font-mono">
               Something Good
             </h3>
           </div>
@@ -144,13 +146,12 @@ function Figma() {
               alt="image1"
               className="w-full h-28 object-cover mb-2"
             />
-            <p className="mb-3 tracking-wide text-base text-shadow indent-8">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa,
-              omnis.
+            <p className="mb-3 tracking-wide text-sm px-2 text-shadow indent-8 font-mono">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
             </p>
             <a
               target="_blank"
-              className="backdrop bg-white bg-opacity-0 border border-white px-3 py-1.5 rounded focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-40 hover:bg-opacity-20 text-lg"
+              className="backdrop bg-white bg-opacity-0 border border-white px-3 py-1.5 rounded focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-40 hover:bg-opacity-20 text-lg font-mono"
             >
               Detail
             </a>
@@ -159,7 +160,7 @@ function Figma() {
 
         <div className="backdrop w-10/12 md:w-1/4 bg-white hover:bg-black hover:bg-opacity-20 bg-opacity-20 rounded p-3 text-white border border-white shadow-lg">
           <div className="w-full mb-3 pb-3 border-b border-1 border-white">
-            <h3 className="text-xl font-semibold text-shadow">
+            <h3 className="text-xl font-semibold text-shadow font-mono">
               Something Good
             </h3>
           </div>
@@ -170,13 +171,12 @@ function Figma() {
               alt="image2"
               className="w-full h-28 object-cover mb-2"
             />
-            <p className="mb-3 tracking-wide text-base text-shadow indent-8">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa,
-              omnis.
+            <p className="mb-3 tracking-wide text-sm px-2 text-shadow indent-8 font-mono">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
             </p>
             <a
               target="_blank"
-              className="backdrop bg-white bg-opacity-0 border border-white px-3 py-1.5 rounded focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-40 hover:bg-opacity-20 text-lg"
+              className="backdrop bg-white bg-opacity-0 border border-white px-3 py-1.5 rounded focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-40 hover:bg-opacity-20 text-lg font-mono"
             >
               Detail
             </a>
@@ -185,7 +185,7 @@ function Figma() {
 
         <div className="backdrop w-10/12 md:w-1/4 bg-white hover:bg-black hover:bg-opacity-20 bg-opacity-20 rounded p-3 text-white border border-white shadow-lg">
           <div className="w-full mb-3 pb-3 border-b border-1 border-white">
-            <h3 className="text-xl font-semibold text-shadow">
+            <h3 className="text-xl font-semibold text-shadow font-mono">
               Something Good
             </h3>
           </div>
@@ -196,13 +196,12 @@ function Figma() {
               alt="image3"
               className="w-full h-28 object-cover mb-2"
             />
-            <p className="mb-3 tracking-wide text-base text-shadow indent-8">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa,
-              omnis.
+            <p className="mb-3 tracking-wide text-sm px-2 text-shadow indent-8 font-mono">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
             </p>
             <a
               target="_blank"
-              className="backdrop bg-white bg-opacity-0 border border-white px-3 py-1.5 rounded focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-40 hover:bg-opacity-20 text-lg"
+              className="backdrop bg-white bg-opacity-0 border border-white px-3 py-1.5 rounded focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-40 hover:bg-opacity-20 text-lg font-mono"
             >
               Detail
             </a>

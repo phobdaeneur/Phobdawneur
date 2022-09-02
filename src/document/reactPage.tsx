@@ -25,7 +25,7 @@ function ReactPage() {
         onClick={homeLocation}
         className="p-2 w-96 pl-5 pr-5 bg-transparent ring-2 ring-white text-white text-lg font-mono rounded-lg bg-gradient-to-r hover:from-violet-600 hover:to-rose-500 hover:ring-0 hover:text-gray-100"
       >
-        HOME PAGE
+        Home page
       </button>
 
       <div className="flex flex-row gap-28">

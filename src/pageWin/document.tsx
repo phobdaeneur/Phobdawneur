@@ -40,7 +40,7 @@ function Document() {
 
       <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-4">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6 ">
-          <a className="w-full ring-2 ring-opacity-50 ring-[#C65335] bg-gradient-to-b hover:to-[#B44242] hover:from-[#FF9339] hover:ring-0 hover:opacity-90 flex flex-col justify-center items-center transition duration-300 ease-in-out hover:-translate-y-2">
+          <a className="w-full ring-2 ring-opacity-10 ring-[#2B222F] bg-gradient-to-b hover:to-[#B44242] hover:from-[#FF9339] hover:ring-0 hover:opacity-90 flex flex-col justify-center items-center transition duration-300 ease-in-out hover:-translate-y-2">
             <img src={java} className=" h-20 w-auto pt-4" />
 
             <div className="text-center">
@@ -52,7 +52,7 @@ function Document() {
 
           <div
             onClick={reactPage}
-            className="w-full ring-2 ring-opacity-50 ring-[#C65335] bg-gradient-to-b hover:to-[#B44242] hover:from-[#FF9339] hover:ring-0 hover:opacity-90 flex flex-col justify-center items-center transition duration-300 ease-in-out hover:-translate-y-2"
+            className="w-full ring-2 ring-opacity-10 ring-[#2B222F] bg-gradient-to-b hover:to-[#B44242] hover:from-[#FF9339] hover:ring-0 hover:opacity-90 flex flex-col justify-center items-center transition duration-300 ease-in-out hover:-translate-y-2"
           >
             <img src={react} className=" h-20 w-auto pt-4" />
 
@@ -61,7 +61,7 @@ function Document() {
             </div>
           </div>
 
-          <a className="w-full ring-2 ring-opacity-50 ring-[#C65335] bg-gradient-to-b hover:to-[#B44242] hover:from-[#FF9339] hover:ring-0 hover:opacity-90 flex flex-col justify-center items-center transition duration-300 ease-in-out hover:-translate-y-2">
+          <a className="w-full ring-2 ring-opacity-10 ring-[#2B222F] bg-gradient-to-b hover:to-[#B44242] hover:from-[#FF9339] hover:ring-0 hover:opacity-90 flex flex-col justify-center items-center transition duration-300 ease-in-out hover:-translate-y-2">
             <img src={nodeJs} className=" h-20" />
 
             <div className="text-center">
@@ -69,14 +69,14 @@ function Document() {
             </div>
           </a>
 
-          <a className="w-full ring-2 ring-opacity-50 ring-[#C65335] bg-gradient-to-b hover:to-[#B44242] hover:from-[#FF9339] hover:ring-0 hover:opacity-90 flex flex-col justify-center items-center transition duration-300 ease-in-out hover:-translate-y-2">
+          <a className="w-full ring-2 ring-opacity-10 ring-[#2B222F] bg-gradient-to-b hover:to-[#B44242] hover:from-[#FF9339] hover:ring-0 hover:opacity-90 flex flex-col justify-center items-center transition duration-300 ease-in-out hover:-translate-y-2">
             <img src={html} className=" h-20 w-auto pt-4" />
             <div className="text-center">
               <p className="text-xl text-[#1A1A1A] font-bold mb-2">HTML/CSS</p>
             </div>
           </a>
 
-          <a className="w-full ring-2 ring-opacity-50 ring-[#C65335] bg-gradient-to-b hover:to-[#B44242] hover:from-[#FF9339] hover:ring-0 hover:opacity-90 flex flex-col justify-center items-center transition duration-300 ease-in-out hover:-translate-y-2">
+          <a className="w-full ring-2 ring-opacity-10 ring-[#2B222F] bg-gradient-to-b hover:to-[#B44242] hover:from-[#FF9339] hover:ring-0 hover:opacity-90 flex flex-col justify-center items-center transition duration-300 ease-in-out hover:-translate-y-2">
             <img src={php} className=" h-20" />
 
             <div className="text-center">
@@ -84,7 +84,7 @@ function Document() {
             </div>
           </a>
 
-          <a className="w-full ring-2 ring-opacity-50 ring-[#C65335] bg-gradient-to-b hover:to-[#B44242] hover:from-[#FF9339] hover:ring-0 hover:opacity-90 flex flex-col justify-center items-center transition duration-300 ease-in-out hover:-translate-y-2">
+          <a className="w-full ring-2 ring-opacity-10 ring-[#2B222F] bg-gradient-to-b hover:to-[#B44242] hover:from-[#FF9339] hover:ring-0 hover:opacity-90 flex flex-col justify-center items-center transition duration-300 ease-in-out hover:-translate-y-2">
             <img src={database} className=" h-20 w-auto pt-4" />
             <div className="text-center">
               <p className="text-xl text-[#1A1A1A] font-bold mb-2">Database</p>
@@ -93,7 +93,7 @@ function Document() {
 
           <div
             onClick={figmaPage}
-            className="w-full ring-2 ring-opacity-50 ring-[#C65335] bg-gradient-to-b hover:to-[#B44242] hover:from-[#FF9339] hover:ring-0 hover:opacity-90 flex flex-col justify-center items-center transition duration-300 ease-in-out hover:-translate-y-2"
+            className="w-full ring-2 ring-opacity-10 ring-[#2B222F] bg-gradient-to-b hover:to-[#B44242] hover:from-[#FF9339] hover:ring-0 hover:opacity-90 flex flex-col justify-center items-center transition duration-300 ease-in-out hover:-translate-y-2"
           >
             <img src={figma} className=" h-20 w-auto pt-4" />
 
@@ -104,7 +104,7 @@ function Document() {
 
           <div
             onClick={iconPage}
-            className="w-full ring-2 ring-opacity-50 ring-[#C65335] bg-gradient-to-b hover:to-[#B44242] hover:from-[#FF9339] hover:ring-0 hover:opacity-90 flex flex-col justify-center items-center transition duration-300 ease-in-out hover:-translate-y-2"
+            className="w-full ring-2 ring-opacity-10 ring-[#2B222F] bg-gradient-to-b hover:to-[#B44242] hover:from-[#FF9339] hover:ring-0 hover:opacity-90 flex flex-col justify-center items-center transition duration-300 ease-in-out hover:-translate-y-2"
           >
             <img src={star} className=" h-20 w-auto" />
 

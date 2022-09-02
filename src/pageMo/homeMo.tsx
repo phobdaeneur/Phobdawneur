@@ -8,18 +8,26 @@ import "react-alice-carousel/lib/alice-carousel.css";
 
 function HomeMo() {
   return (
-    <div className="flex flex-col items-center justify-start h-screen w-screen pt-6">
+    <div className="flex flex-col items-center justify-center h-screen w-screen pt-6 pb-16">
       {/* Image */}
       <div className="w-3/4 h-auto flex items-center justify-center px-4">
         <AliceCarousel
           autoPlay
-          autoPlayInterval={3000}
+          autoPlayInterval={5000}
           infinite={true}
           renderPrevButton={() => {
-            return <button className="px-4">Previous</button>;
+            return (
+              <button className="absolute left-3 top-2/4 md:top-3/4 text-white">
+                Previous
+              </button>
+            );
           }}
           renderNextButton={() => {
-            return <button className=" px-4">Nextstep</button>;
+            return (
+              <button className="absolute right-3 top-2/4 md:top-3/4 text-white">
+                Next
+              </button>
+            );
           }}
         >
           <img src={dawneur} className=" sliderimg" />
@@ -30,7 +38,7 @@ function HomeMo() {
       </div>
 
       {/* Data */}
-      <div className="flex flex-col items-start gap-2 px-5 w-screen">
+      <div className="flex flex-col items-start gap-2 px-5 w-screen md:px-28">
         <label className=" text-[#1A1A1A] text-xl font-serif">
           Welcome to my universe
         </label>

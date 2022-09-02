@@ -8,14 +8,22 @@ import Document from "../pageWin/document";
 import Cooking from "../pageWin/cooking";
 import logo from "../images/logo/PHOBDAWNEUR.png";
 import logoWhite from "../images/logo/PHOBDAWNEUR2.png";
-import iconhome from "../images/iconMenu/home.svg";
-import iconMe from "../images/iconMenu/star.svg";
-import iconDocument from "../images/iconMenu/document.svg";
-import iconWork from "../images/iconMenu/calendar.svg";
+import iconhome2 from "../images/iconMenu/home 2.png";
+import iconMe2 from "../images/iconMenu/star 2.png";
+import iconDocument2 from "../images/iconMenu/document 2.png";
+import iconWork2 from "../images/iconMenu/calendar 2.png";
+import iconhome from "../images/iconMenu/home 3.png";
+import iconMe from "../images/iconMenu/star 3.png";
+import iconDocument from "../images/iconMenu/document 3.png";
+import iconWork from "../images/iconMenu/calendar3.png";
 import HomeMo from "../pageMo/homeMo";
 import AboutAsMo from "../pageMo/aboutAsMo";
 import DocumentMo from "../pageMo/documentMo";
 import CalendarMo from "../pageMo/calendarMo";
+
+function classNames(...classes: any[]): string {
+  return classes.filter(Boolean).join(" ");
+}
 
 function Home() {
   const { setTheme, theme } = useContext(ThemeContext);
@@ -30,20 +38,80 @@ function Home() {
           <Tab.Group>
             <Tab.List className="flex flex-row-reverse items-center justify-between bg-[#FFFFFF] h-16 fixed z-10 w-screen">
               <div className="flex flex-row gap-10 items-center justify-center px-10">
-                <Tab value="home" onClick={() => setSelected("home")}>
+                <Tab
+                  className={({ selected }) =>
+                    classNames(
+                      " px-2 rounded-lg py-2.5 text-base font-mono leading-5 text-black",
+                      "ring-white ring-opacity-60 ring-offset-2 ring-offset-amber-400 focus:outline-none focus:ring-2",
+                      selected
+                        ? " bg-[#FFA446] text-white shadow shadow-orange-500"
+                        : " text-white hover:bg-white/[0.12] hover:text-amber-500"
+                    )
+                  }
+                  value="home"
+                  onClick={() => setSelected("home")}
+                >
                   Home
                 </Tab>
-                <Tab value="home" onClick={() => setSelected("home")}>
+                <Tab
+                  className={({ selected }) =>
+                    classNames(
+                      " px-2 rounded-lg py-2.5 text-base font-mono leading-5 text-black",
+                      "ring-white ring-opacity-60 ring-offset-2 ring-offset-amber-400 focus:outline-none focus:ring-2",
+                      selected
+                        ? " bg-[#FFA446] text-white shadow shadow-orange-500"
+                        : " text-white hover:bg-white/[0.12] hover:text-amber-500"
+                    )
+                  }
+                  value="home"
+                  onClick={() => setSelected("home")}
+                >
                   About us
                 </Tab>
-                <Tab value="document" onClick={() => setSelected("document")}>
+                <Tab
+                  className={({ selected }) =>
+                    classNames(
+                      " px-2 rounded-lg py-2.5 text-base font-mono leading-5 text-black",
+                      "ring-white ring-opacity-60 ring-offset-2 ring-offset-amber-400 focus:outline-none focus:ring-2",
+                      selected
+                        ? " bg-[#FFA446] text-white shadow shadow-orange-500"
+                        : " text-white hover:bg-white/[0.12] hover:text-amber-500"
+                    )
+                  }
+                  value="document"
+                  onClick={() => setSelected("document")}
+                >
                   Document
                 </Tab>
-                <Tab value="document" onClick={() => setSelected("document")}>
-                  Cook with me
+                <Tab
+                  className={({ selected }) =>
+                    classNames(
+                      " px-2 rounded-lg py-2.5 text-base font-mono leading-5 text-black",
+                      "ring-white ring-opacity-60 ring-offset-2 ring-offset-amber-400 focus:outline-none focus:ring-2",
+                      selected
+                        ? "  bg-[#FFA446] shadow shadow-orange-500"
+                        : " text-white hover:bg-white/[0.12] hover:text-amber-500"
+                    )
+                  }
+                  value="document"
+                  onClick={() => setSelected("document")}
+                >
+                  Cooking
                 </Tab>
-                <Tab value="document" onClick={() => setSelected("document")}>
-                  Calendar for my work
+                <Tab
+                  className={({ selected }) =>
+                    classNames(
+                      " px-2 rounded-lg py-2.5 text-base font-mono leading-5 text-black",
+                      "ring-white ring-opacity-60 ring-offset-2 ring-offset-amber-400 focus:outline-none focus:ring-2",
+                      selected
+                        ? " bg-[#FFA446] text-white shadow shadow-orange-500"
+                        : " text-white hover:bg-white/[0.12] hover:text-amber-500"
+                    )
+                  }
+                  value="document"
+                  onClick={() => setSelected("document")}
+                >
+                  My work
                 </Tab>
                 {/* Mode display  */}
 
@@ -82,7 +150,7 @@ function Home() {
                 )}
               </div>
               {selected === "document" ? (
-                <div className=" text-2xl font-serif bg-[#ffffff] h-full flex flex-row items-center justify-center rounded-sm">
+                <div className=" text-2xl font-serif bg-[#ffffff] h-full flex flex-row items-center justify-center gap-2 rounded-sm">
                   <img src={logoWhite} className="w-16 h-auto" />
                   PHOBDAWNEUR
                 </div>
@@ -119,7 +187,7 @@ function Home() {
       </div>
 
       {/* Mobile app */}
-      <div className=" bg-[#FFFFFF] h-screen w-screen lg:hidden">
+      <div className="h-screen w-screen lg:hidden">
         <div className=" w-screen">
           <Tab.Group>
             <Tab.Panels>
@@ -137,22 +205,54 @@ function Home() {
               </Tab.Panel>
             </Tab.Panels>
 
-            <Tab.List className=" bg-[#F9B301] h-12 w-screen bottom-0 flex flex-row gap-4 justify-between items-center rounded-t-xl px-4 fixed z-10">
-              <Tab className="flex flex-col items-center justify-center">
-                <img src={iconhome} className=" h-5" />
-                <label className=" text-sm font-mono">HOME</label>
+            <Tab.List className="bg-[#FFFFFF] h-16 w-screen bottom-0 flex flex-row gap-4 justify-between items-center px-4 fixed z-10 border-t-2 rounded-t-2xl">
+              <Tab value="home" onClick={() => setSelected("home")}>
+                {selected === "home" ? (
+                  <div className="flex flex-row items-center justify-center gap-2 bg-[#FFA446] rounded-xl px-3 py-2">
+                    <img src={iconhome2} className=" h-6" />
+                    <label className=" text-sm text-white font-mono">
+                      HOME
+                    </label>
+                  </div>
+                ) : (
+                  <img src={iconhome} className=" h-8" />
+                )}
               </Tab>
-              <Tab className="flex flex-col items-center justify-center">
-                <img src={iconMe} className=" h-5" />
-                <label className=" text-sm font-mono">ABOUT ME</label>
+              <Tab value="about" onClick={() => setSelected("about")}>
+                {selected === "about" ? (
+                  <div className="flex flex-row items-center justify-center gap-2 bg-[#FFA446] rounded-xl px-3 py-2">
+                    <img src={iconMe2} className=" h-6" />
+                    <label className=" text-sm text-white font-mono">
+                      ABOUT ME
+                    </label>
+                  </div>
+                ) : (
+                  <img src={iconMe} className=" h-8" />
+                )}
               </Tab>
-              <Tab className="flex flex-col items-center justify-center">
-                <img src={iconDocument} className=" h-5" />
-                <label className=" text-sm font-mono">DOCUMENT</label>
+              <Tab value="document" onClick={() => setSelected("document")}>
+                {selected === "document" ? (
+                  <div className="flex flex-row items-center justify-center gap-2 bg-[#FFA446] rounded-xl px-3 py-2">
+                    <img src={iconDocument2} className=" h-6" />
+                    <label className=" text-sm text-white font-mono">
+                      DOCUMENT
+                    </label>
+                  </div>
+                ) : (
+                  <img src={iconDocument} className=" h-8" />
+                )}
               </Tab>
-              <Tab className="flex flex-col items-center justify-center">
-                <img src={iconWork} className=" h-5" />
-                <label className=" text-sm font-mono">WORK</label>
+              <Tab value="work" onClick={() => setSelected("work")}>
+                {selected === "work" ? (
+                  <div className="flex flex-row items-center justify-center gap-2 bg-[#FFA446] rounded-xl px-3 py-2">
+                    <img src={iconDocument2} className=" h-6" />
+                    <label className=" text-sm text-white font-mono">
+                      WORK
+                    </label>
+                  </div>
+                ) : (
+                  <img src={iconWork} className=" h-8" />
+                )}
               </Tab>
             </Tab.List>
           </Tab.Group>

@@ -8,7 +8,7 @@ import moment from "moment";
 import "react-big-calendar/lib/css/react-big-calendar.css";
 import event from "../component/event";
 import "moment-timezone";
-import logo from "../images/PHOBDAWNEUR.png";
+import bg from "../images/bg2.png";
 
 const localizer = momentLocalizer(moment);
 
@@ -39,12 +39,14 @@ function CalendarMo() {
     setSelected(e.target.value);
   };
   return (
-    <div className=" flex flex-col w-screen gap-4 px-5">
-      <div className=" flex flex-row items-center justify-between pt-10">
-        <label className=" text-xl font-mono">Work tracking</label>
+    <div
+      style={{ backgroundImage: `url(${bg})` }}
+      className=" flex flex-col w-screen h-screen gap-4 px-5 bg-cover md:py-32"
+    >
+      <div className=" flex justify-end items-end pt-10">
         <button
           onClick={() => setShow(true)}
-          className=" w-24 h-10 rounded-xl bg-[#FFA446] text-sm font-medium text-black hover:text-white select-none hover:bg-[#feb600]"
+          className=" w-24 h-10 rounded-xl bg-gradient-to-r from-[#F27A64] to-[#BE687D] hover:to-[#F27A64] hover:from-[#BE687D] text-sm font-medium text-white hover:text-white select-none"
         >
           Create
         </button>
@@ -129,7 +131,26 @@ function CalendarMo() {
                         {/* Date end */}
                       </div>
                     </>
-                  ) : null}
+                  ) : (
+                    <>
+                      <div className="dark:bg-white dark:rounded-xl">
+                        {/* Date start */}
+                        <label className="block mb-1 text-gray-600 font-semibold">
+                          Date start
+                        </label>
+                        <LocalizationProvider dateAdapter={AdapterDateFns}>
+                          <DateTimePicker
+                            label="Start"
+                            ampm={false}
+                            value={dateStart}
+                            onChange={handleDateStartChange}
+                            renderInput={(params) => <TextField {...params} />}
+                          />
+                        </LocalizationProvider>
+                        {/* Date start */}
+                      </div>
+                    </>
+                  )}
                 </div>
                 <div className="flex justify-end pt-5">
                   <button
@@ -140,7 +161,7 @@ function CalendarMo() {
                   </button>
                   <button
                     onClick={() => setShow(false)}
-                    className="focus:outline-none px-4 bg-yellow-500 p-3 ml-3 rounded-lg text-white hover:bg-yellow-400"
+                    className="focus:outline-none px-4 bg-gradient-to-r from-[#B44242] to-[#FF9339] hover:to-[#B44242] hover:from-[#FF9339] p-3 ml-3 rounded-lg text-white"
                   >
                     Confirm
                   </button>
