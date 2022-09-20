@@ -81,7 +81,7 @@ function WorkCalendar() {
                     </label>
                     <input
                       type="text"
-                      className="bg-indigo-50 px-4 py-2 outline-none rounded-md w-64"
+                      className="bg-indigo-50 px-4 py-2 outline-none rounded-md w-64 focus:ring-2 focus:ring-[#016be3]"
                     />
                   </div>
                   <div className="flex flex-row gap-7 items-center justify-between">

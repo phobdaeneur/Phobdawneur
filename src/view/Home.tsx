@@ -6,7 +6,7 @@ import AboutUs from "../pageWin/aboutUs";
 import WorkCalendar from "../pageWin/workCalendar";
 import Document from "../pageWin/document";
 import Cooking from "../pageWin/cooking";
-import logo from "../images/logo/PHOBDAWNEUR.png";
+import logo from "../images/logo/logo1.png";
 import logoWhite from "../images/logo/PHOBDAWNEUR2.png";
 import iconhome2 from "../images/iconMenu/home 2.png";
 import iconMe2 from "../images/iconMenu/star 2.png";
@@ -20,6 +20,16 @@ import HomeMo from "../pageMo/homeMo";
 import AboutAsMo from "../pageMo/aboutAsMo";
 import DocumentMo from "../pageMo/documentMo";
 import CalendarMo from "../pageMo/calendarMo";
+import home from "../images/iconMenu/imgs/home.png";
+import nameHome from "../images/iconMenu/imgs/name/HOME.png";
+import about from "../images/iconMenu/imgs/about.png";
+import nameAbout from "../images/iconMenu/imgs/name/ABOUT.png";
+import document from "../images/iconMenu/imgs/document.png";
+import nameDocument from "../images/iconMenu/imgs/name/DOCUMENT.png";
+import cooking from "../images/iconMenu/imgs/cooking.png";
+import nameCooking from "../images/iconMenu/imgs/name/COOKING.png";
+import work from "../images/iconMenu/imgs/work.png";
+import nameWork from "../images/iconMenu/imgs/name/WORK.png";
 
 function classNames(...classes: any[]): string {
   return classes.filter(Boolean).join(" ");
@@ -38,80 +48,40 @@ function Home() {
           <Tab.Group>
             <Tab.List className="flex flex-row-reverse items-center justify-between bg-[#FFFFFF] h-16 fixed z-10 w-screen">
               <div className="flex flex-row gap-10 items-center justify-center px-10">
-                <Tab
-                  className={({ selected }) =>
-                    classNames(
-                      " px-2 rounded-lg py-2.5 text-base font-mono leading-5 text-black",
-                      "ring-white ring-opacity-60 ring-offset-2 ring-offset-amber-400 focus:outline-none focus:ring-2",
-                      selected
-                        ? " bg-[#FFA446] text-white shadow shadow-orange-500"
-                        : " text-white hover:bg-white/[0.12] hover:text-amber-500"
-                    )
-                  }
-                  value="home"
-                  onClick={() => setSelected("home")}
-                >
-                  Home
+                <Tab value="home" onClick={() => setSelected("home")}>
+                  {selected === "home" ? (
+                    <img src={home} className=" h-6" />
+                  ) : (
+                    <img src={nameHome} className=" h-3" />
+                  )}
                 </Tab>
-                <Tab
-                  className={({ selected }) =>
-                    classNames(
-                      " px-2 rounded-lg py-2.5 text-base font-mono leading-5 text-black",
-                      "ring-white ring-opacity-60 ring-offset-2 ring-offset-amber-400 focus:outline-none focus:ring-2",
-                      selected
-                        ? " bg-[#FFA446] text-white shadow shadow-orange-500"
-                        : " text-white hover:bg-white/[0.12] hover:text-amber-500"
-                    )
-                  }
-                  value="home"
-                  onClick={() => setSelected("home")}
-                >
-                  About us
+                <Tab value="about" onClick={() => setSelected("about")}>
+                  {selected === "about" ? (
+                    <img src={about} className=" h-6" />
+                  ) : (
+                    <img src={nameAbout} className=" h-3" />
+                  )}
                 </Tab>
-                <Tab
-                  className={({ selected }) =>
-                    classNames(
-                      " px-2 rounded-lg py-2.5 text-base font-mono leading-5 text-black",
-                      "ring-white ring-opacity-60 ring-offset-2 ring-offset-amber-400 focus:outline-none focus:ring-2",
-                      selected
-                        ? " bg-[#FFA446] text-white shadow shadow-orange-500"
-                        : " text-white hover:bg-white/[0.12] hover:text-amber-500"
-                    )
-                  }
-                  value="document"
-                  onClick={() => setSelected("document")}
-                >
-                  Document
+                <Tab value="document" onClick={() => setSelected("document")}>
+                  {selected === "document" ? (
+                    <img src={document} className=" h-6" />
+                  ) : (
+                    <img src={nameDocument} className=" h-3" />
+                  )}
                 </Tab>
-                <Tab
-                  className={({ selected }) =>
-                    classNames(
-                      " px-2 rounded-lg py-2.5 text-base font-mono leading-5 text-black",
-                      "ring-white ring-opacity-60 ring-offset-2 ring-offset-amber-400 focus:outline-none focus:ring-2",
-                      selected
-                        ? "  bg-[#FFA446] shadow shadow-orange-500"
-                        : " text-white hover:bg-white/[0.12] hover:text-amber-500"
-                    )
-                  }
-                  value="document"
-                  onClick={() => setSelected("document")}
-                >
-                  Cooking
+                <Tab value="cooking" onClick={() => setSelected("cooking")}>
+                  {selected === "cooking" ? (
+                    <img src={cooking} className=" h-6" />
+                  ) : (
+                    <img src={nameCooking} className=" h-3" />
+                  )}
                 </Tab>
-                <Tab
-                  className={({ selected }) =>
-                    classNames(
-                      " px-2 rounded-lg py-2.5 text-base font-mono leading-5 text-black",
-                      "ring-white ring-opacity-60 ring-offset-2 ring-offset-amber-400 focus:outline-none focus:ring-2",
-                      selected
-                        ? " bg-[#FFA446] text-white shadow shadow-orange-500"
-                        : " text-white hover:bg-white/[0.12] hover:text-amber-500"
-                    )
-                  }
-                  value="document"
-                  onClick={() => setSelected("document")}
-                >
-                  My work
+                <Tab value="work" onClick={() => setSelected("work")}>
+                  {selected === "work" ? (
+                    <img src={work} className=" h-6" />
+                  ) : (
+                    <img src={nameWork} className=" h-3" />
+                  )}
                 </Tab>
                 {/* Mode display  */}
 
@@ -149,14 +119,14 @@ function Home() {
                   </button>
                 )}
               </div>
-              {selected === "document" ? (
-                <div className=" text-2xl font-serif bg-[#ffffff] h-full flex flex-row items-center justify-center gap-2 rounded-sm">
-                  <img src={logoWhite} className="w-16 h-auto" />
+              {selected === "home" || selected === "about" ? (
+                <div className=" text-2xl font-serif bg-[#FFA446] h-full w-1/4 flex flex-row items-center justify-center gap-2 rounded-sm">
+                  <img src={logo} className="h-12 w-auto" />
                   PHOBDAWNEUR
                 </div>
               ) : (
-                <div className=" text-2xl font-serif bg-[#FFA446] h-full w-1/4 flex flex-row items-center px-10 justify-center rounded-sm">
-                  <img src={logo} className="w-16 h-auto" />
+                <div className=" text-2xl font-serif bg-[#FFFFFF] h-full w-1/4 gap-2 flex flex-row items-center px-10 justify-center rounded-sm">
+                  <img src={logo} className="h-12 w-auto" />
                   PHOBDAWNEUR
                 </div>
               )}

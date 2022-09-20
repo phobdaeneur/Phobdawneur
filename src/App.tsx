@@ -8,6 +8,14 @@ import Library from "./document/react/library";
 import ReactPage from "./document/reactPage";
 import DesignPage from "./document/designPage";
 import Figma from "./document/figma";
+import Tailwind from "./document/react/tailwind";
+import Tables from "./document/react/table";
+import Buttons from "./document/react/button";
+import LoginForm from "./document/react/loginForm";
+import Template1 from "./document/react/login/template1";
+import Template2 from "./document/react/login/template2";
+import Template3 from "./document/react/login/template3";
+import Texts from "./document/react/texts";
 
 function App() {
   return (
@@ -20,6 +28,14 @@ function App() {
             <Route path="/reactPage" element={<ReactPage />} />
             <Route path="/designPage" element={<DesignPage />} />
             <Route path="/figma" element={<Figma />} />
+            <Route path="/tailwind" element={<Tailwind />} />
+            <Route path="/table" element={<Tables />} />
+            <Route path="/button" element={<Buttons />} />
+            <Route path="/loginForm" element={<LoginForm />} />
+            <Route path="/login1" element={<Template1 />} />
+            <Route path="/login2" element={<Template2 />} />
+            <Route path="/login3" element={<Template3 />} />
+            <Route path="/text" element={<Texts />} />
           </Routes>
         </div>
       </StyledEngineProvider>

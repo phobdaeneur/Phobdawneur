@@ -29,7 +29,7 @@ function DesignPage() {
         </label>
         <button
           onClick={homeLocation}
-          className="p-2 w-60 lg:w-96 pl-5 pr-5 bg-transparent from-red-600 to-green-700 text-white text-lg font-bold rounded-lg bg-gradient-to-r hover:from-indigo-600 hover:to-yellow-600 hover:text-gray-100"
+          className="p-2 w-60 lg:w-96 pl-5 pr-5 bg-transparent from-red-600 to-green-700 text-white text-lg font-mono rounded-lg bg-gradient-to-r hover:from-indigo-600 hover:to-yellow-600 hover:text-gray-100"
         >
           Home page
         </button>
@@ -38,6 +38,7 @@ function DesignPage() {
       <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4 px-16">
         <a
           target="_blank"
+          rel="noopener"
           href={linksvgrepo}
           className="bg-black border-indigo-600 bg-opacity-30 border-opacity-60 | p-4 border-solid rounded-3xl border-2 | flex justify-around items-center cursor-pointer | hover:bg-indigo-400 dark:hover:bg-indigo-600 hover:border-transparent hover:scale-105 hover:opacity-70 | transition-colors duration-500"
         >
@@ -57,6 +58,7 @@ function DesignPage() {
 
         <a
           target="_blank"
+          rel="noopener"
           href={linkunDraw}
           className="bg-black border-red-600 bg-opacity-30 border-opacity-60 | p-4 border-solid rounded-3xl border-2 | flex justify-around items-center cursor-pointer | hover:bg-red-400 dark:hover:bg-red-600 hover:border-transparent hover:scale-105 hover:opacity-70 | transition-colors duration-500"
         >
@@ -76,6 +78,7 @@ function DesignPage() {
 
         <a
           target="_blank"
+          rel="noopener"
           href={linkfreepik}
           className="bg-black border-yellow-600 bg-opacity-30 border-opacity-60 | p-4 border-solid rounded-3xl border-2 | flex justify-around items-center cursor-pointer | hover:bg-yellow-400 dark:hover:bg-yellow-600 hover:border-transparent hover:scale-105 hover:opacity-80 | transition-colors duration-500"
         >
@@ -95,6 +98,7 @@ function DesignPage() {
 
         <a
           target="_blank"
+          rel="noopener"
           href={linktailwindcss}
           className="bg-black border-green-600 bg-opacity-30 border-opacity-60 | p-4 border-solid rounded-3xl border-2 | flex justify-around items-center cursor-pointer | hover:bg-green-400 dark:hover:bg-green-600 hover:border-transparent hover:scale-105 hover:opacity-80 | transition-colors duration-500"
         >
@@ -116,6 +120,7 @@ function DesignPage() {
       <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4 px-16">
         <a
           target="_blank"
+          rel="noopener"
           href={linktailus}
           className="bg-black border-indigo-600 bg-opacity-30 border-opacity-60 | p-4 border-solid rounded-3xl border-2 | flex justify-around items-center cursor-pointer | hover:bg-indigo-400 dark:hover:bg-indigo-600 hover:border-transparent hover:scale-105 hover:opacity-70 | transition-colors duration-500"
         >
@@ -135,6 +140,7 @@ function DesignPage() {
 
         <a
           target="_blank"
+          rel="noopener"
           href={linkframer}
           className="bg-black border-red-600 bg-opacity-30 border-opacity-60 | p-4 border-solid rounded-3xl border-2 | flex justify-around items-center cursor-pointer | hover:bg-red-400 dark:hover:bg-red-600 hover:border-transparent hover:scale-105 hover:opacity-70 | transition-colors duration-500"
         >
@@ -154,6 +160,7 @@ function DesignPage() {
 
         <a
           target="_blank"
+          rel="noopener"
           href={linkcodepen}
           className="bg-black border-yellow-600 bg-opacity-30 border-opacity-60 | p-4 border-solid rounded-3xl border-2 | flex justify-around items-center cursor-pointer | hover:bg-yellow-400 dark:hover:bg-yellow-600 hover:border-transparent hover:scale-105 hover:opacity-80 | transition-colors duration-500"
         >
@@ -173,6 +180,7 @@ function DesignPage() {
 
         <a
           target="_blank"
+          rel="noopener"
           href={linktailwindcomponents}
           className="bg-black border-green-600 bg-opacity-30 border-opacity-60 | p-4 border-solid rounded-3xl border-2 | flex justify-around items-center cursor-pointer | hover:bg-green-400 dark:hover:bg-green-600 hover:border-transparent hover:scale-105 hover:opacity-80 | transition-colors duration-500"
         >
@@ -194,6 +202,7 @@ function DesignPage() {
       <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4 px-16">
         <a
           target="_blank"
+          rel="noopener"
           href=""
           className="bg-black border-indigo-600 bg-opacity-30 border-opacity-60 | p-4 border-solid rounded-3xl border-2 | flex justify-around items-center cursor-pointer | hover:bg-indigo-400 dark:hover:bg-indigo-600 hover:border-transparent hover:scale-105 hover:opacity-70 | transition-colors duration-500"
         >
@@ -213,6 +222,7 @@ function DesignPage() {
 
         <a
           target="_blank"
+          rel="noopener"
           href=""
           className="bg-black border-red-600 bg-opacity-30 border-opacity-60 | p-4 border-solid rounded-3xl border-2 | flex justify-around items-center cursor-pointer | hover:bg-red-400 dark:hover:bg-red-600 hover:border-transparent hover:scale-105 hover:opacity-70 | transition-colors duration-500"
         >
@@ -232,6 +242,7 @@ function DesignPage() {
 
         <a
           target="_blank"
+          rel="noopener"
           href=""
           className="bg-black border-yellow-600 bg-opacity-30 border-opacity-60 | p-4 border-solid rounded-3xl border-2 | flex justify-around items-center cursor-pointer | hover:bg-yellow-400 dark:hover:bg-yellow-600 hover:border-transparent hover:scale-105 hover:opacity-70 | transition-colors duration-500"
         >
@@ -251,6 +262,7 @@ function DesignPage() {
 
         <a
           target="_blank"
+          rel="noopener"
           href=""
           className="bg-black border-green-600 bg-opacity-30 border-opacity-60 | p-4 border-solid rounded-3xl border-2 | flex justify-around items-center cursor-pointer | hover:bg-green-400 dark:hover:bg-green-600 hover:border-transparent hover:scale-105 hover:opacity-70 | transition-colors duration-500"
         >

@@ -10,9 +10,9 @@ import redux from "../../images/iconTec/redux.svg";
 import Axios from "../../images/iconTec/Axios.png";
 
 function Library() {
-  const library = useNavigate();
-  const reactPage = () => {
-    library("/reactPage");
+  const navigate = useNavigate();
+  const reactLocation = () => {
+    navigate("/reactPage");
   };
   return (
     <div className="flex flex-col lg:flex-row w-screen h-screen">
@@ -31,7 +31,7 @@ function Library() {
           easier, for everyone for free. we can’t wait to hear what you think
         </p>
         <button
-          onClick={reactPage}
+          onClick={reactLocation}
           className="p-2 w-56 pl-5 pr-5 bg-transparent border-2 border-gray-500 text-gray-500 text-lg rounded-lg hover:bg-gray-500 hover:text-gray-100 focus:border-4 focus:border-gray-300"
         >
           React document page

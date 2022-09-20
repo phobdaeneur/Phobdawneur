@@ -1,5 +1,5 @@
 import React from "react";
-import bg from "../images/bg3.jpg";
+import bg from "../images/bg2.png";
 import bg2 from "../images/bg9.jpg";
 import bg3 from "../images/bg4.jpg";
 import bg4 from "../images/bg5.jpg";
@@ -21,7 +21,7 @@ function Figma() {
       <div className="flex flex-row justify-center lg:justify-end w-full lg:px-48">
         <button
           onClick={homePage}
-          className=" w-48 h-10 rounded-md bg-gradient-to-r border-2 hover:border-0 hover:opacity-70 hover:to-[#8135b4] hover:from-[#ff39b0] text-sm font-medium text-white hover:text-white select-none"
+          className=" w-48 h-10 rounded-md bg-gradient-to-r border-2 hover:border-0 hover:to-[#615889] hover:from-[#ED7865] text-sm font-medium text-white hover:text-white select-none"
         >
           Home page
         </button>

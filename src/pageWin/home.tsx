@@ -12,7 +12,7 @@ function HomePage() {
     <div className="flex flex-col items-center justify-center h-screen">
       {/* Image */}
 
-      <div className=" absolute left-0 w-1/4 h-screen bg-gradient-to-b from-[#ffaa55] to-[#f76300]"></div>
+      <div className=" absolute left-0 w-1/4 h-screen bg-[#FFA446]"></div>
       <div className="flex flex-row items-center justify-between">
         <div className=" absolute left-20 w-2/5 z-20 rounded-xl">
           <AliceCarousel
